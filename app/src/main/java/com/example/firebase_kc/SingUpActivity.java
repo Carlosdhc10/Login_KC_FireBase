@@ -54,10 +54,10 @@ public class SingUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if ( task.isSuccessful()){
-                                Toast.makeText(SingUpActivity.this, "Increso correcto", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SingUpActivity.this, "Ingreso correcto", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(SingUpActivity.this, LoginActivity.class));
                             }else {
-                                Toast.makeText(SingUpActivity.this, "Inicio Fallado" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SingUpActivity.this, "Ingreso Fallido" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
